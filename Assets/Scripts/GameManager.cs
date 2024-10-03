@@ -5,6 +5,7 @@ using System.Threading;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -73,7 +74,7 @@ public class GameManager : MonoBehaviour
             EndGame();
         }
     }
-    //private void 
+
 
     public void ChangePlayer()
     {
@@ -211,5 +212,10 @@ public class GameManager : MonoBehaviour
             cards.Add(child.gameObject.GetComponent<Card>());
         }
         return cards;
+    }
+
+    public void ExitMenu()
+    {
+        SceneManager.LoadSceneAsync(0);
     }
 }

@@ -685,7 +685,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 308768165}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1820851236}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: ExitMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &308768165
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1644,8 +1656,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2a5af391d916d743bc9a1e315fb7ed0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cardsAmount: 21
-  pairsAmount: 9
+  cardsAmount: 5
+  pairsAmount: 1
   card: {fileID: 4137905882627363665, guid: b512cbbbf6e9d13419de76468de8555c, type: 3}
   questionSprite: {fileID: 21300000, guid: 30d9dc47092f7204c8eb45425f132071, type: 3}
   backSprite: {fileID: 21300000, guid: d85941ac2971a894eb2d9f0f77ba8692, type: 3}
